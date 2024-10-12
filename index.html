@@ -33,7 +33,7 @@
         // Загрузка модели
         const loader = new THREE.GLTFLoader();
         let model;
-        
+
         loader.load('models/model.glb', (gltf) => {
             model = gltf.scene;
             model.scale.set(3, 3, 3); // Увеличиваем масштаб модели
@@ -48,8 +48,8 @@
         let previousMousePosition = { x: 0, y: 0 };
 
         window.addEventListener('mousedown', (event) => {
-            if (event.button === 0) {
-                isDragging = true; // ЛКМ
+            if (event.button === 0) { // ЛКМ
+                isDragging = true;
             }
             previousMousePosition = { x: event.clientX, y: event.clientY };
         });
