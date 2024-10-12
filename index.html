@@ -32,7 +32,7 @@
 
         // Загрузка модели
         const loader = new THREE.GLTFLoader();
-        loader.load('Earth.glb', (gltf) => {
+        loader.load('models/model.glb', (gltf) => {
             const model = gltf.scene;
             model.scale.set(0.25, 0.25, 0.25); // Масштабирование модели
             scene.add(model);
